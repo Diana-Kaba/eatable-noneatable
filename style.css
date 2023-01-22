@@ -8,11 +8,11 @@
   left: 330px;
 }
 
-span#msg {
+#msg {
   font-size: 30px;
   font-weight: bolder;
   letter-spacing: 2px;
-  font-family: "Raleway", sans-serif;
+  font-family: "Raleway", sans-serif;  
   background-color: rgb(204, 198, 198);
   text-align: center;
 }
