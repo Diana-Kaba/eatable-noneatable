@@ -27,6 +27,9 @@ let thingsArr = [
 
 let field = document.getElementById("field"); // поле
 let msg = document.getElementById("msg"); // повідомлення
+let repeatButton = document.getElementById("repeat"); // кнопка повтору
+
+repeatButton.addEventListener("click", start); // додаємо подію на натискання
 
 function getRandomInt(n) {
   // випадкове число
@@ -83,6 +86,13 @@ timer = setInterval(create, interval); // малювати кожні 10 мс
 
 function stop() {
   clearInterval(timer); // завершити анімацію
+}
+
+function start() {
+  // функція для перезапуску
+  count--; // обнуляємо спроби
+  msg.innerHTML = "На цей раз пощастить!";
+  timer = setInterval(create, interval); // запускаєм заново
 }
 
 function speed() {
