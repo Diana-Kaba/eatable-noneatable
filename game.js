@@ -68,9 +68,11 @@ function check(thing) {
   if (thing.className == "eatable") {
     speed();
     count++; // збільшуємо рахунок
-  } else {
-    count--;
-  } // зменшуємо рахунок
+    msg.innerHTML = "Спроб: " + count;
+  }
+  // else {
+  //   count--;
+  // } // зменшуємо рахунок
   if (thing.className == "noneatable") {
     stop(); // завершуємо гру, бо натиснув на неїстівне
     msg.innerHTML = " На жаль, гра завершена!";
