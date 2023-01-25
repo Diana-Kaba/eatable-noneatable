@@ -92,11 +92,11 @@ function stop() {
 
 function start() {
   // функція для перезапуску
-  count--; // обнуляємо спроби
+  count = 0; // обнуляємо спроби
   msg.innerHTML = "На цей раз пощастить!";
+  stop();
   timer = setInterval(create, interval); // запускаєм заново
   check();
-  stop();
 }
 
 function speed() {
