@@ -72,6 +72,8 @@ function check(thing) {
     speed();
     count++; // збільшуємо рахунок
     msg.innerHTML = "Спроб: " + count;
+  } else {
+    count--; // зменьшуємо рахунок
   }
   if (thing.className == "noneatable") {
     stop(); // завершуємо гру, бо натиснув на неїстівне
@@ -93,6 +95,8 @@ function start() {
   count--; // обнуляємо спроби
   msg.innerHTML = "На цей раз пощастить!";
   timer = setInterval(create, interval); // запускаєм заново
+  check();
+  stop();
 }
 
 function speed() {
