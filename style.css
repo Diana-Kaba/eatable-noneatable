@@ -5,7 +5,7 @@
   height: 530px;
   background: url(./images/plate-with-cutlery.webp);
   position: relative;
-  left: 330px;
+  margin: 0 auto;
 }
 
 #msg {
